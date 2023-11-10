@@ -2099,6 +2099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 6543105004668343379, guid: 89bdc76e061bd2d4880409b29b5117d0,
     type: 3}
+  blockHolder: {fileID: 2109672676}
   mousePlane: {fileID: 1189610636}
   mousePlaneLM:
     serializedVersion: 2
@@ -4180,7 +4181,7 @@ Transform:
   m_GameObject: {fileID: 2109672675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -9.26, y: 0.03, z: 1.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
