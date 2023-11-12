@@ -6,7 +6,6 @@ public class Block : MonoBehaviour
 {
 
     private bool touched = false;
-    public bool highest = false;
 
     public Material mat1;
     public Material mat2;
@@ -20,7 +19,7 @@ public class Block : MonoBehaviour
     }
     private void Update()
     {
-        if (highest)
+        if (touched)
         {
             mr.material = mat2;
         }
