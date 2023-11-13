@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    Vector3 targetRot = Vector3.zero;
+    Vector3 targetRot = new Vector3(0, 180, 0);
     public float speed = 1f;
+    public float moveSpeed = 1f;
     void Start()
     {
         
@@ -15,6 +16,7 @@ public class CameraRotation : MonoBehaviour
     void LateUpdate()
     {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRot), speed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, 0f, transform.position.z), moveSpeed * Time.deltaTime);
 
         if(Input.GetKeyDown(KeyCode.E))
         {

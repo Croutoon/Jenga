@@ -23,7 +23,7 @@ public class Main : MonoBehaviour
     public float power = 50f;
     public float powerMultiplier = 1;
 
-    private Transform[] blocks = new Transform[48];
+    Transform[] blocks = new Transform[48];
     Transform selected;
     //Transform oldSelected;
 
@@ -182,7 +182,7 @@ public class Main : MonoBehaviour
     {
         foreach (var b in blocks)
         {
-            b.position = new Vector3(0, -1000f, 0f);
+            b.position = new Vector3(0f, -1000f, 0f);
         }
         if (canReset)
         {
