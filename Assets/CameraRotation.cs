@@ -17,14 +17,15 @@ public class CameraRotation : MonoBehaviour
     {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetRot), speed * Time.deltaTime);
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, 0f, transform.position.z), moveSpeed * Time.deltaTime);
+    }
 
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            targetRot = new Vector3 (0, targetRot.y + 90, 0);
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            targetRot = new Vector3(0, targetRot.y + -90, 0);
-        }
+    public void right()
+    {
+        targetRot = new Vector3(0, targetRot.y + 90, 0);
+    }
+
+    public void left()
+    {
+        targetRot = new Vector3(0, targetRot.y + -90, 0);
     }
 }

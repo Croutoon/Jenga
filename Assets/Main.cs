@@ -148,7 +148,7 @@ public class Main : MonoBehaviour
         canReset = false;
         for (int i = blocks.Length - 2; i >= 0; i--)
         {
-            yield return new WaitForSeconds(.2f);
+            yield return new WaitForSeconds(.15f);
             MoveBlock(blocks[i], true);
         }
         canReset = true;
